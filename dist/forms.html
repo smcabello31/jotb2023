@@ -7,7 +7,7 @@
   <title>Forms - Admin One Tailwind CSS Admin Dashboard</title>
 
   <!-- Tailwind is included -->
-  <link rel="stylesheet" href="css/main.css?v=1683734941841">
+  <link rel="stylesheet" href="css/main.css?v=1683735524865">
 
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
@@ -152,7 +152,7 @@
       <li class="--set-active-index-html">
         <a href="forms.html">
           <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
-          <span class="menu-item-label">Edad</span>
+          <span class="menu-item-label">Predicción</span>
         </a>
       </li>
       <!-- <li class="--set-active-index-html">
@@ -213,7 +213,7 @@
             <div class="field-body">
               <div class="field">
                 <div class="control icons-left">
-                  <input class="input" type="text">
+                  <input class="input" type="text" id="age">
                 </div>
               </div>
             </div>
@@ -222,7 +222,7 @@
             <label class="label">Clase Social</label>
             <div class="control">
               <div class="select">
-                <select name="" id="">
+                <select name="" id="socialClass">
                   <option value="CLASE BAJA/POBRE">CLASE BAJA/POBRE</option>
                   <option value="CLASE MEDIA-MEDIA">CLASE MEDIA-MEDIA</option>
                   <option value="OTRAS">OTRAS</option>
@@ -243,14 +243,14 @@
               <div class="field grouped multiline">
                 <div class="control">
                   <label class="radio">
-                    <input type="radio" name="sample-radio" value="one" checked>
+                    <input type="radio" name="hasChronicDisease" checked>
                     <span class="check"></span>
                     <span class="control-label">Sí</span>
                   </label>
                 </div>
                 <div class="control">
                   <label class="radio">
-                    <input type="radio" name="sample-radio" value="two">
+                    <input type="radio" name="hasChronicDisease">
                     <span class="check"></span>
                     <span class="control-label">No</span>
                   </label>
@@ -264,14 +264,14 @@
               <div class="field grouped multiline">
                 <div class="control">
                   <label class="radio">
-                    <input type="radio" name="sample-radio" value="one" checked>
+                    <input type="radio" name="isSocialSecurityUser" checked>
                     <span class="check"></span>
                     <span class="control-label">Sí</span>
                   </label>
                 </div>
                 <div class="control">
                   <label class="radio">
-                    <input type="radio" name="sample-radio" value="two">
+                    <input type="radio" name="isSocialSecurityUser">
                     <span class="check"></span>
                     <span class="control-label">No</span>
                   </label>
@@ -353,7 +353,7 @@
 </div>
 
 <!-- Scripts below are for demo only -->
-<script type="text/javascript" src="js/main.min.js?v=1683734941841"></script>
+<script type="text/javascript" src="js/main.min.js?v=1683735524865"></script>
 
 
 <script>
