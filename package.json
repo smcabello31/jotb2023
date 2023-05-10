@@ -25,6 +25,6 @@
     "tailwindcss": "^2.1.2"
   },
   "dependencies": {
-    "node-odbc": "^0.2.10"
+    "odbc": "^2.4.7"
   }
 }

@@ -18,102 +18,47 @@ const chartColors = {
 
 const ctx = document.getElementById('big-line-chart').getContext('2d');
 
-new Chart(ctx, {
-  type: 'line',
-  data: {
-    datasets: [
-      {
-        fill: false,
-        borderColor: chartColors.default.primary,
-        borderWidth: 2,
-        borderDash: [],
-        borderDashOffset: 0.0,
-        pointBackgroundColor: chartColors.default.primary,
-        pointBorderColor: 'rgba(255,255,255,0)',
-        pointHoverBackgroundColor: chartColors.default.primary,
-        pointBorderWidth: 20,
-        pointHoverRadius: 4,
-        pointHoverBorderWidth: 15,
-        pointRadius: 4,
-        data: randomChartData(9)
-      },
-      {
-        fill: false,
-        borderColor: chartColors.default.info,
-        borderWidth: 2,
-        borderDash: [],
-        borderDashOffset: 0.0,
-        pointBackgroundColor: chartColors.default.info,
-        pointBorderColor: 'rgba(255,255,255,0)',
-        pointHoverBackgroundColor: chartColors.default.info,
-        pointBorderWidth: 20,
-        pointHoverRadius: 4,
-        pointHoverBorderWidth: 15,
-        pointRadius: 4,
-        data: randomChartData(9)
-      },
-      {
-        fill: false,
-        borderColor: chartColors.default.danger,
-        borderWidth: 2,
-        borderDash: [],
-        borderDashOffset: 0.0,
-        pointBackgroundColor: chartColors.default.danger,
-        pointBorderColor: 'rgba(255,255,255,0)',
-        pointHoverBackgroundColor: chartColors.default.danger,
-        pointBorderWidth: 20,
-        pointHoverRadius: 4,
-        pointHoverBorderWidth: 15,
-        pointRadius: 4,
-        data: randomChartData(9)
-      }
+const labels = ["0-29", "30-39", "40-49", "50-59", "60-69", "70-79", "80+"];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Satisfacción',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
     ],
-    labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09']
-  },
-  options: {
-    maintainAspectRatio: false,
-    legend: {
-      display: false
-    },
-    responsive: true,
-    tooltips: {
-      backgroundColor: '#f5f5f5',
-      titleFontColor: '#333',
-      bodyFontColor: '#666',
-      bodySpacing: 4,
-      xPadding: 12,
-      mode: 'nearest',
-      intersect: 0,
-      position: 'nearest'
-    },
-    scales: {
-      yAxes: [{
-        barPercentage: 1.6,
-        gridLines: {
-          drawBorder: false,
-          color: 'rgba(29,140,248,0.0)',
-          zeroLineColor: 'transparent'
-        },
-        ticks: {
-          padding: 20,
-          fontColor: '#9a9a9a'
-        }
-      }],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+    borderWidth: 1
+  }]
+};
 
-      xAxes: [{
-        barPercentage: 1.6,
-        gridLines: {
-          drawBorder: false,
-          color: 'rgba(225,78,202,0.1)',
-          zeroLineColor: 'transparent'
-        },
-        ticks: {
-          padding: 20,
-          fontColor: '#9a9a9a'
-        }
-      }]
+
+new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
     }
-  }
+  },
 })
 
-
+const config = {
+  
+};
