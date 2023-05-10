@@ -1,99 +1,98 @@
-  <section class="section main-section">
-    <div class="card mb-6">
-      <header class="card-header">
-        <p class="card-header-title">
-          <span class="icon"><i class="mdi mdi-ballot"></i></span>
-          Forms
-        </p>
-      </header>
-      <div class="card-content">
-        <form method="get">
-          <div class="field">
-            <label class="label">Edad</label>
-            <div class="field-body">
-              <div class="field">
-                <div class="control icons-left">
-                  <input class="input" type="text" id="age">
-                </div>
+<section class="section main-section">
+  <div class="card mb-6">
+    <header class="card-header">
+      <p class="card-header-title">
+        <span class="icon"><i class="mdi mdi-ballot"></i></span>
+        Forms
+      </p>
+    </header>
+    <div class="card-content">
+      <form method="get">
+        <div class="field">
+          <label class="label">Edad</label>
+          <div class="field-body">
+            <div class="field">
+              <div class="control icons-left">
+                <input class="input" type="text" id="age" />
               </div>
             </div>
           </div>
-          <div class="field">
-            <label class="label">Clase Social</label>
-            <div class="control">
-              <div class="select">
-                <select name="" id="socialClass">
-                  <option value="CLASE BAJA/POBRE">CLASE BAJA/POBRE</option>
-                  <option value="CLASE MEDIA-MEDIA">CLASE MEDIA-MEDIA</option>
-                  <option value="OTRAS">OTRAS</option>
-                  <option value="CLASE MEDIA-BAJA">CLASE MEDIA-BAJA</option>
-                  <option value="CLASE TRABAJADORA/OBRERA/PROLETARIADO">
-                    CLASE TRABAJADORA/OBRERA/PROLETARIADO
-                  </option>
-                  <option value="CLASE ALTA Y MEDIA ALTA">CLASE ALTA Y MEDIA ALTA</option>
-                  <option value="N.C.">N.C.</option>
-                  <option value="N.S.">N.S.</option>
-                </select>
+        </div>
+        <div class="field">
+          <label class="label">Clase Social</label>
+          <div class="control">
+            <div class="select">
+              <select name="" id="socialClass">
+                <option value="CLASE BAJA/POBRE">CLASE BAJA/POBRE</option>
+                <option value="CLASE MEDIA-MEDIA">CLASE MEDIA-MEDIA</option>
+                <option value="OTRAS">OTRAS</option>
+                <option value="CLASE MEDIA-BAJA">CLASE MEDIA-BAJA</option>
+                <option value="CLASE TRABAJADORA/OBRERA/PROLETARIADO">
+                  CLASE TRABAJADORA/OBRERA/PROLETARIADO
+                </option>
+                <option value="CLASE ALTA Y MEDIA ALTA">
+                  CLASE ALTA Y MEDIA ALTA
+                </option>
+                <option value="N.C.">N.C.</option>
+                <option value="N.S.">N.S.</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Enfermo Crónico</label>
+          <div class="field-body">
+            <div class="field grouped multiline">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="hasChronicDisease" checked />
+                  <span class="check"></span>
+                  <span class="control-label">Sí</span>
+                </label>
+              </div>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="hasChronicDisease" />
+                  <span class="check"></span>
+                  <span class="control-label">No</span>
+                </label>
               </div>
             </div>
           </div>
-          <div class="field">
-            <label class="label">Enfermo Crónico</label>
-            <div class="field-body">
-              <div class="field grouped multiline">
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="hasChronicDisease" checked>
-                    <span class="check"></span>
-                    <span class="control-label">Sí</span>
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="hasChronicDisease">
-                    <span class="check"></span>
-                    <span class="control-label">No</span>
-                  </label>
-                </div>
+        </div>
+        <div class="field">
+          <label class="label">Usuario Sanidad Pública</label>
+          <div class="field-body">
+            <div class="field grouped multiline">
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="isSocialSecurityUser" checked />
+                  <span class="check"></span>
+                  <span class="control-label">Sí</span>
+                </label>
+              </div>
+              <div class="control">
+                <label class="radio">
+                  <input type="radio" name="isSocialSecurityUser" />
+                  <span class="check"></span>
+                  <span class="control-label">No</span>
+                </label>
               </div>
             </div>
           </div>
-          <div class="field">
-            <label class="label">Usuario Sanidad Pública</label>
-            <div class="field-body">
-              <div class="field grouped multiline">
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="isSocialSecurityUser" checked>
-                    <span class="check"></span>
-                    <span class="control-label">Sí</span>
-                  </label>
-                </div>
-                <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="isSocialSecurityUser">
-                    <span class="check"></span>
-                    <span class="control-label">No</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="field grouped">
-            <div class="control">
-              <button type="submit" class="button green">
-                Submit
-              </button>
-            </div>
-            <div class="control">
-              <button type="reset" class="button red">
-                Reset
-              </button>
-            </div>
+        <div class="field grouped">
+          <div class="control">
+            <button id="submitButton" type="submit" class="button green">
+              Submit
+            </button>
           </div>
-        </form>
-      </div>
+          <div class="control">
+            <button type="reset" class="button red">Reset</button>
+          </div>
+        </div>
+      </form>
     </div>
-  </section>
-
+  </div>
+</section>
